@@ -1,3 +1,5 @@
+<title>Hours to decimal</title>
+
 <?php
 
 use Livewire\Volt\Component;

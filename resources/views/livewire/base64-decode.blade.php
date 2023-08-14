@@ -1,3 +1,5 @@
+<title>Base64 decode</title>
+
 <?php
 
 use Livewire\Volt\Component;

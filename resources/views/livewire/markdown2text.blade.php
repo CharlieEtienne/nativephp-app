@@ -1,3 +1,5 @@
+<title>Markdown to text</title>
+
 <?php
 
 use Livewire\Volt\Component;
