@@ -1,5 +1,6 @@
 <?php
 
+use Livewire\Volt\Volt;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Volt::route('/', 'hour2decimal-converter');
+Volt::route('/base64-decode', 'base64-decode');
+Volt::route('/markdown2text', 'markdown2text');

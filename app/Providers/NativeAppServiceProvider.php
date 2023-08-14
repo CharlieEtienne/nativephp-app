@@ -23,6 +23,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
         //     ->show();
 
         MenuBar::create()
+            ->alwaysOnTop()
             ->width(400)
             ->height(410)
             ->withContextMenu(
