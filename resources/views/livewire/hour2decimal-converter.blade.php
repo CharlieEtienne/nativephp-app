@@ -1,4 +1,4 @@
-<title>Hours to decimal</title>
+
 
 <?php
 
@@ -39,7 +39,7 @@ new class extends Component {
     {{-- x-transition:enter-end="opacity-100 translate-y-0" --}}
     {{-- x-show="show" --}}
 >
-
+    <title>Hours to decimal</title>
     {{-- Title --}}
     <h2 class="text-center text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-8">Convert hours to decimal</h2>
 

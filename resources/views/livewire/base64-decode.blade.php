@@ -1,4 +1,4 @@
-<title>Base64 decode</title>
+
 
 <?php
 
@@ -19,7 +19,7 @@ new class extends Component {
 ?>
 
 <div>
-
+    <title>Base64 decode</title>
     {{-- Title --}}
     <h2 class="text-center text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-8">Base64 decode</h2>
 

@@ -1,4 +1,4 @@
-<title>Markdown to text</title>
+
 
 <?php
 
@@ -22,7 +22,7 @@ new class extends Component {
 ?>
 
 <div>
-
+    <title>Markdown to text</title>
     {{-- Title --}}
     <h2 class="text-center text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-8 mb-8">Markdown to text</h2>
 
@@ -52,10 +52,7 @@ new class extends Component {
         <div class="w-33 flex-1 text-right">
             <div class="inline-block has-tooltip dark:text-gray-400 hover:dark:text-white">
                 <span class="position-absolute tooltip rounded-full shadow-lg py-px px-2 bg-white dark:bg-gray-900 -mt-8 text-sm text-gray-800 dark:text-white" style="margin-left: -33px;">Copy</span>
-                <svg @click="$clipboard($wire.$get('plainText')); $dispatch('notice')" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard ml-auto cursor-pointer" viewBox="0 0 16 16">
-                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-                </svg>
+                <x-copy-button @click="$clipboard($wire.$get('plainText')); $dispatch('notice')" />
             </div>
         </div>
     </div>
@@ -73,10 +70,7 @@ new class extends Component {
         <div class="w-33 flex-1 text-right">
             <div class="inline-block has-tooltip dark:text-gray-400 hover:dark:text-white">
                 <span class="position-absolute tooltip rounded-full shadow-lg py-px px-2 bg-white dark:bg-gray-900 -mt-8 text-sm text-gray-800 dark:text-white" style="margin-left: -33px;">Copy</span>
-                <svg @click="$clipboard($wire.$get('htmlResult')); $dispatch('notice')" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard ml-auto cursor-pointer" viewBox="0 0 16 16">
-                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-                </svg>
+                <x-copy-button @click="$clipboard($wire.$get('htmlResult')); $dispatch('notice')" />
             </div>
         </div>
     </div>
@@ -86,9 +80,5 @@ new class extends Component {
         readonly
         rows="4"
     >{{ $htmlResult }}</textarea>
-
-    {{-- How to --}}
-    {{-- <div class="text-center text-gray-500 mt-6">Hit <code class="rounded bg-gray-200 p-1">Enter</code> to copy plain text result</div> --}}
-    {{-- <div class="text-center text-gray-500 mt-1">Hit <code class="rounded bg-gray-200 p-1">Shift</code> + <code class="rounded bg-gray-200 p-1">Enter</code> to insert a new line</div> --}}
 
 </div>
