@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Volt::route('/', 'hour2decimal-converter');
 Volt::route('/base64-decode', 'base64-decode');
 Volt::route('/markdown2text', 'markdown2text');
+Volt::route('/meteo', 'meteo');

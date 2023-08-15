@@ -17,6 +17,7 @@
     <div class="max-w-full mx-auto p-6 lg:p-8">
 
         <nav class="flex items-center">
+            <a class="text-center rounded-full text-sm py-2 px-3 mx-1 bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 hover:bg-gray-300" href="/meteo" wire:navigate>Météo</a>
             <a class="text-center rounded-full text-sm py-2 px-3 mx-1 bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 hover:bg-gray-300" href="/" wire:navigate>Hours to decimal</a>
             <a class="text-center rounded-full text-sm py-2 px-3 mx-1 bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 hover:bg-gray-300" href="/base64-decode" wire:navigate>Base64 Decode</a>
             <a class="text-center rounded-full text-sm py-2 px-3 mx-1 bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 hover:bg-gray-300" href="/markdown2text" wire:navigate>Markdown to text</a>
